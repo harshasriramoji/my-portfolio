@@ -1,9 +1,22 @@
-# No build command needed - serving pre-built dist folder as static site
 [build]
+# Publish the pre-built dist folder without any build command
 publish = "client/dist"
+# Override dashboard settings - no build command needed
+command = ""
 
 # Redirect all routes to index.html for SPA (Single Page Application)
 [[redirects]]
 from = "/*"
 to = "/index.html"
 status = 200
+
+# Cache settings for static assets
+[[headers]]
+for = "/assets/*"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/"
+[headers.values]
+Cache-Control = "public, max-age=3600"
