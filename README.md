@@ -15,12 +15,12 @@ A premium portfolio built with React, Vite, Tailwind CSS, Framer Motion, GSAP, T
 
 ### Frontend on Netlify
 
-The site is configured to deploy directly on Netlify. The `netlify.toml` file contains all necessary build and deploy settings.
+The site is deployed as a static site on Netlify. The pre-built `client/dist` folder is served directly.
 
 1. Connect your GitHub repository to Netlify
-2. Netlify will automatically detect the configuration and deploy
-3. Build command: `npm run build` (configured in netlify.toml)
-4. Publish directory: `client/dist` (configured in netlify.toml)
+2. Netlify will automatically detect `netlify.toml` and deploy
+3. Publish directory: `client/dist` (configured in netlify.toml)
+4. No build step required - the dist folder is already built and ready to serve
 4. Add `VITE_API_URL` to point to the Render backend.
 
 ### Backend on Render

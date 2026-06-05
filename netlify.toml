@@ -1,16 +1,6 @@
+# No build command needed - serving pre-built dist folder as static site
 [build]
-# Build command
-command = "cd client && npm install && npm run build"
-
-# Directory to publish
 publish = "client/dist"
-
-# Base directory (site root)
-base = "."
-
-[build.environment]
-# Environment variables if needed
-NODE_VERSION = "18"
 
 # Redirect all routes to index.html for SPA (Single Page Application)
 [[redirects]]
