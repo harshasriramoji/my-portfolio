@@ -1,1 +1,66 @@
-import{j as e,t as a,m as r,u as n}from"./index-DPW3rJfk.js";import{u as l,S as c}from"./useGsapReveal-Cj8iO9YV.js";function x(){const s=l();return e.jsx("section",{id:"certifications",className:"section-shell",children:e.jsxs("div",{ref:s,className:"mx-auto max-w-7xl px-4 sm:px-6 lg:px-8",children:[e.jsx(c,{eyebrow:"Certifications",title:"Proof points with a clean, premium presentation",description:"A clean certification grid with staggered reveal motion and premium glass cards, keeping the information terse and visually weighted."}),e.jsx("div",{className:"grid gap-4 md:grid-cols-3",children:a.map((t,i)=>e.jsxs(r.div,{"data-reveal":!0,className:"glass-card p-6 transition hover:-translate-y-1 hover:border-white/15",whileHover:{y:-6},children:[e.jsxs("div",{className:"flex items-center justify-between gap-4",children:[e.jsx("div",{className:"flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-white",children:e.jsx(n,{})}),e.jsxs("span",{className:"text-xs uppercase tracking-[0.35em] text-slate-500",children:["0",i+1]})]}),e.jsx("h3",{className:"mt-5 text-xl font-semibold text-white",children:t.title}),e.jsx("p",{className:"mt-2 text-sm text-slate-200",children:t.date}),e.jsx("p",{className:"mt-3 text-sm leading-7 text-slate-300",children:t.description})]},t.title))})]})})}export{x as CertificationsSection};
+import { j as e, t as a, m as r, u as n } from "./index-DPW3rJfk.js";
+import { u as l, S as c } from "./useGsapReveal-Cj8iO9YV.js";
+function x() {
+  const s = l();
+  return e.jsx("section", {
+    id: "certifications",
+    className: "section-shell",
+    children: e.jsxs("div", {
+      ref: s,
+      className: "mx-auto max-w-7xl px-4 sm:px-6 lg:px-8",
+      children: [
+        e.jsx(c, {
+          eyebrow: "Certifications",
+          title: "Proof points with a clean, premium presentation",
+          description:
+            "A clean certification grid with staggered reveal motion and premium glass cards, keeping the information terse and visually weighted.",
+        }),
+        e.jsx("div", {
+          className: "grid gap-4 md:grid-cols-3",
+          children: a.map((t, i) =>
+            e.jsxs(
+              r.div,
+              {
+                "data-reveal": !0,
+                className:
+                  "glass-card p-6 transition hover:-translate-y-1 hover:border-white/15",
+                whileHover: { y: -6 },
+                children: [
+                  e.jsxs("div", {
+                    className: "flex items-center justify-between gap-4",
+                    children: [
+                      e.jsx("div", {
+                        className:
+                          "flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-white",
+                        children: e.jsx(n, {}),
+                      }),
+                      e.jsxs("span", {
+                        className:
+                          "text-xs uppercase tracking-[0.35em] text-slate-500",
+                        children: ["0", i + 1],
+                      }),
+                    ],
+                  }),
+                  e.jsx("h3", {
+                    className: "mt-5 text-xl font-semibold text-white",
+                    children: t.title,
+                  }),
+                  e.jsx("p", {
+                    className: "mt-2 text-sm text-slate-200",
+                    children: t.date,
+                  }),
+                  e.jsx("p", {
+                    className: "mt-3 text-sm leading-7 text-slate-300",
+                    children: t.description,
+                  }),
+                ],
+              },
+              t.title,
+            ),
+          ),
+        }),
+      ],
+    }),
+  });
+}
+export { x as CertificationsSection };
